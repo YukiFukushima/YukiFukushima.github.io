@@ -1,476 +1,512 @@
-<!DOCTYPE html>
-<html lang="ja">
-<!-- 最初の設定は終わっています　必要な方は触ってください -->
+/* ここから下に記載していく */
+.container{
+    width: 1200px;
+    margin: 0 auto;
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MIKKE</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-</head>
-<!-- 最初の設定は終わっています　必要な方は触ってください -->
+ /*   border: solid 1px red;*/
+}
+.en_title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.ja_title{
+    font-size: 18px;
+}
 
-<body>
-  <!-- この中に記述していく -->
-  <!-- ここから下にコードを書く -->
+/* header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.container .menu{
+    display: flex;
+    padding-top: 50px;
+    font-size: 18px;
+}
+.container .logo{
+    padding-top: 17px;
+}
+.menu a{
+    margin-right: 50px;
+    color: black;
+    text-decoration: none;
+}
+/* headerここまで */
 
-  <!--header部分-->
-  <header>
-    <div class="container">
-      <!--logo-->
-      <div class="logo">
-        <img src="../Deploy2/img/MikeIconフリー素材.jpg" width="128px" height="80px" alt="">
-      </div>
-      <!--menu-->
-      <div class="menu">
-        <a href="#link_intro_box" class="menu_ABOUT">ABOUT</a>
-        <a href="#link_feature_box" class="menu_FEATURE">FEATURE</a>
-        <a href="#link_faq_box" class="menu_CONTACT">FAQ</a>
-      </div>
-      
-    </div> 
-  </header>
-  <!--header部分ここまで-->
+/* top_box */
+.top_box .container{
+    background: url("../img/桜の画像.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:cover;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.container .main_title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.container .sub_title{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+/* top_boxここまで */
 
-  <!--top_box部分-->
-  <div class="top_box">
-    <div class="container">
-      <div class="top_title">
-        <p class="main_title">友達との会話をもっと身近に</p>
-        <p class="sub_title">MIKKE</p>
-      </div>
-    </div>
-  </div>
-  <!--top_box部分ここまで-->
+/* intro_box */
+.intro_box .en_title{
+    color: #ffd61a;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.intro_box .ja_title{
+    margin-bottom: 60px;
+}
+.intro_box .intro_box_p_1{
+    margin-bottom: 40px;
+    color: gray;
+    font-size: 16px;
+}
+.intro_box .intro_box_p_2{
+    margin-bottom: 40px;
+    color: gray;
+    font-size: 16px;
+}
+.intro_box .intro_box_p_3{
+    margin-bottom: 120px;
+    color: gray;
+    font-size: 16px;
+}
+.intro_box p{
+    text-align: center;
+}
+.intro_img{
+    display: flex;
+}
+/* intro_boxここまで */
 
-  <!--intro_box部分-->
-  <div class="intro_box">
-    <a name="link_intro_box"></a>
-    <div class="container">
-      <p class="en_title">ABOUT</p>
-      <p class="ja_title">MIKKEについて</p>
-      <p class="intro_box_p_1">
-        MIKKEは、友達と会って話がしたい時、相手に負担がかからない、<br><br>
-        ”偶然、出会った”<br><br>
-        を実現するアプリです。
-      </p>
-      <p class="intro_box_p_2">
-        話したいことがある。でも連絡をとって約束を取り合って話すほどの内容でもない。<br><br>
-        相手に気を使わせるし。<br><br>
-        でも、会って話をしたい。
+/* feature_box部分 */
+.feature_box .en_title{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.feature_box .ja_title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.feature_box .feature_contents{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.feature_box .feature_content{
+    width: 480px;
+}
+.feature_content .feature_text_main{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+.feature_content .feature_text_sub{
+    height: 200px;
+    font-size: 16px;
+    color: gray;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+/* feature_box部分ここまで */
 
-        <!--
-        このような思いを実現したい。
-        今は、コミュニケーションアプリなどで比較的リアルに会話は可能だが、
-        文章ではなく、直接やりとりしたい。
-        直接のやり取りでないと、真の話はできないから。会話のテンポも<br><br>
-        そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
-        -->
-      </p>
-      <p class="intro_box_p_3">
-        このような思いを実現したいと考えて、開発をはじめました。
-      </p>
-    </div>
-  </div>
-  <!--intro_box部分ここまで-->
+/* course_box *
+.course_box .en_title{
+    color: black;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.course_box .course_box_p{
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.cource_card{
+    display: flex;
+}
+.cource_card_content{
+    width: 480px;
+}
+.cource_card_content_right{
+    width: 480px;
+    margin-left: 120px;
+}
+.cource_card_text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.c_card_title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.c_card_p{
+    color: gray;
+    font-size: 16px;
+}
+.cource_card_content .c_card_title{
+    margin-left: 50px;
+}
+.cource_card_content .c_card_p{
+    margin-left: 50px;
+}
+* course_boxここまで */
 
-  <!--feature_box部分-->
-  <div class="feature_box">
-    <a name="link_feature_box"></a>
-    <div class="container">
-      <p class="en_title">FEATURE</p>
-      <p class="ja_title">特徴について</p>
-      <div class="feature_contents">
-        <div class="feature_content">
-          <div class="feature_text">
-            <p class="feature_text_main">特徴1</p>
-            <p class="feature_text_sub">
-              自分が入室した時、すぐには同じグループの相手に入室したことが伝わりません。<br>
-              グループ内のメンバー、複数人の入室が確認できた段階で、互いに入室が伝わります。<br>
-              こうすることで、入室した時に相手に気を遣わせるかもしれない、ということを
-              気にしなくても済むようになります。
-            </p>
-          </div>
-          <div class="feature_img">
-            <img src="../Deploy2/img/mikkeのイメージ図1.jpg" width="480px" height="270px" alt="">
-          </div>
-        </div>
-        <div class="feature_content">
-          <div class="feature_text">
-            <p class="feature_text_main">特徴2</p>
-            <p class="feature_text_sub">
-              何人の入室が確認されたら通知をしてもらうか、という人数指定が可能です。<br>
-              こうすることで、特に親しい2人だけで話したい場合や、2人だとちょっと重苦しいから、
-              複数人で話したい場合など、<br>自分の気分や話したい内容に合わせて柔軟に利用が可能です。
-            </p>
-          </div>
-          <div class="feature_img">
-            <img src="../Deploy2/img/mikkeのイメージ図2.jpg" width="480px" height="270px" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--feature_box部分ここまで-->
+/* news_box *
+.news_contents{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.news_contents p{
+    font-size: 14px;
+    color: gray;
+}
+.news_box .en_title{
+    color: #ffd61a;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.news_box .ja_title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.news_item{
+    width: 300px;
+}
+.news_item:hover{
+    opacity: 0.5;
+}
+.news_item_date{
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+.news_item_more{
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #ffd61a;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.news_item_more p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+}
+.news_item_more:hover{
+    opacity: 0.5;
+}
+* news_boxここまで */
 
-  <!--course_box部分--
-  <div class="course_box">
-    <a name="link_course_box"></a>
-    <div class="container">
-      <p class="en_title">COURCE</p>
-      <p class="course_box_p">
-        未経験からでもスタートができるよう、カリキュラムは多くの専門家や<br><br>
-        現役チーズ職人のアドバイスのもと、作られました。
-      </p>
+/* access_box *
+.access_box .en_title{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.access_box .ja_title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.access_box_map{
+    padding-bottom: 28.13%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.access_box_map iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.access_box_table{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.access_box_table td{
+    padding-bottom: 30px;
+    padding-right: 50px;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 16px;
+    color: gray;
+}
+* access_boxここまで */
 
-      !--CourceCard1--
-      <div class="cource_card">
-        <div class="cource_card_one_img">
-          <img src="../html_fukushima_41/img/course_01.jpg" width="600px" heigh="405px" alt="">
-        </div>
-        <div class="cource_card_text">
-          <div class="cource_card_content">
-            <p class="c_card_title">本格的な農園を使った実地研修</p>
-            <p class="c_card_p">
-              チーズアカデミーでは、本格的な農園を使った実地研修を<br><br>
-              行うことができます。プロとして活躍するチーズ職人も<br><br>
-              使用するような、広大で環境も整った農園を余すところ<br><br>
-              なく使い、卒業時には本格的なチーズを自分の力で作れる<br><br>
-              実践力の養成を目指します。
-            </p>
-          </div>
-        </div>
-      </div>
+/* contact_box *
+.contact_box .en_title,.contact_box .ja_title,.contact_box .contact_box_p_1,.contact_box .contact_box_p_2{
+    text-align: center;
+}
+.contact_box .contact_box_p_1,.contact_box .contact_box_p_2{
+    font-size: 16px;
+    color: gray;
+}
+.contact_box .en_title{
+    margin-top: 60px;
+}
+.contact_box .ja_title{
+    margin-top: 30px;
+}
+.contact_box .contact_box_p_1{
+    margin-top: 60px;
+}
+.contact_box .contact_box_p_2{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.contact_box_form{
+    width: 640px;
+    margin: 0 auto;
+}
+.form_item{
+    display: flex;
+}
+/* 名前の箱 *
+.form_title_one{
+    width: 240px;
+    border-top: solid 3px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+}
+.form_title_one p{
+    padding-left: 16px;
+    padding-right: 64px;
+    font-size: 16px;
+    color: gray;
+    padding-top: 20px;
+}
+.form_input_one{
+    width: 400px;
+    border-top: solid 3px #bfbfbf;
+}
+.form_input_text{
+    width: 328px;
+    height:36px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+/* カナ、e-mailの箱 *
+.form_title_two{
+    width: 240px;
+    border-top: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+}
+.form_title_two p{
+    padding-left: 16px;
+    padding-right: 64px;
+    font-size: 16px;
+    color: gray;
+    padding-top: 20px;
+}
+.form_input_two{
+    width: 400px;
+    border-top: solid 1px #bfbfbf;
+}
+/* きっかけの箱 *
+.form_title_trigger{
+    width: 240px;
+    border-top: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+}
+.form_title_trigger p{
+    padding-left: 16px;
+    padding-right: 64px;
+    font-size: 16px;
+    color: gray;
+    padding-top: 12px;
+}
+.form_input_trigger{
+    width: 400px;
+    border-top: solid 1px #bfbfbf;
+}
+.form_input_selectbox{
+    width: 328px;
+    height:36px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+/* 志望動機 *
+.form_title_motivation{
+    width: 240px;
+    border-top: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+}
+.form_title_motivation p{
+    padding-left: 16px;
+    padding-right: 64px;
+    font-size: 16px;
+    color: gray;
+    padding-top: 20px;
+}
+.form_input_motivation{
+    width: 400px;
+    border-top: solid 1px #bfbfbf;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.form_input_checkbox{
+    margin-bottom: 24px;
+    padding-left: 10px;
+    font-size: 14px;
+    display: flex;
+}
+.check_box_item{
+    padding-left: 50px;
+    color: gray;
+}
+/* 詳細 *
+.form_title_detail{
+    width: 240px;
+    border-top: solid 1px #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+    border-bottom: solid 1px #bfbfbf;
+}
+.form_title_detail p{
+    padding-left: 16px;
+    padding-right: 64px;
+    font-size: 16px;
+    color: gray;
+    padding-top: 20px;
+}
+.form_input_detail{
+    width: 400px;
+    border-top: solid 1px #bfbfbf;
+    border-bottom: solid 1px #bfbfbf;
+}
+.form_input_detail textarea{
+    border: solid 1px #bfbfbf;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+.contact_item_submit{
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #ffd61a;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+.contact_item_submit p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+}
+.contact_item_submit:hover{
+    opacity: 0.5;
+}
+/* contact_boxここまで */
 
-      !--CourceCard2--
-      <div class="cource_card">
-        <div class="cource_card_text">
-          <div class="cource_card_content_right">
-            <p class="c_card_title">必要な知識もしっかりと取得</p>
-            <p class="c_card_p">
-              チーズ作りには、しっかりとした食に関する知識が<br><br>
-              欠かせません。チーズアカデミーでは、一流講師陣による、<br><br>
-              チーズ作りに必要ないろはを余すところなく学べます。<br><br>
-              チーズそのものでなく、栄養学全般を学ぶことも<br><br>
-              可能ですので、チーズ以外への展開も夢ではないでしょう。
-            </p>
-          </div>
-        </div>
-        <div class="cource_card_two_img">
-          <img src="../html_fukushima_41/img/course_02.jpg" width="600px" heigh="405px" alt="">
-        </div>
-      </div>
+/* faq */
+.faq_box .en_title{
+    color: #ffd61a;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faq_box .ja_title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.faq_contents{
+    width: 640px;
+    margin: 0 auto;
+}
+.faq_item .question, .faq_item span{
+    font-size: 16px;
+    color: gray;
+}
+.faq_contents .question{
+    display: flex;
+    justify-content: space-between;
+}
+.faq_contents .question:hover{
+    cursor: grab;
+}
+.faq_contents .answer{
+    display: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+}
+.faq_item{
+    margin-bottom: 30px;
+}
+.faq_list{
+    margin-bottom: 60px;
+}
+/* faqここまで */
 
-      !--CourceCard3--
-      <div class="cource_card">
-        <div class="cource_card_three_img">
-          <img src="../html_fukushima_41/img/course_03.jpg" width="600px" heigh="405px" alt="">
-        </div>
-        <div class="cource_card_text">
-          <div class="cource_card_content">
-            <p class="c_card_title">卒業制作はティスティング審査あり</p>
-            <p class="c_card_p">
-              チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。<br><br>
-              卒業制作として、チーズ作りを実際に行います。卒業後、<br><br>
-              一般参加によるティスティング審査があるため、作り手の<br><br>
-              目線だけでなく、消費者の目線から、卒業制作作品としての<br><br>
-              チーズを、しっかりと評価いただくことができます。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  !--course_box部分ここまで--
+/* download */
+.download-message{
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size:24px;
+}
+.down-loads{
+    width:50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+ /*   border: solid red;*/
+}
+.download-btn{
+    padding:8px 24px;
+    opacity: 0.8;
+    background-color: black;
+    border-radius: 10px;
+    font-size: smaller;
+ /*   border: solid blue;*/
+}
+.download-btn:hover{
+    opacity: 0.6;
+}
+.apple-btn,.andoloid-btn{
+    color: white;
+}
+/* downloadここまで */
 
-  !--news_box部分--
-  <div class="news_box">
-    <a name="link_news_box"></a>
-    <div class="container">
-      <p class="en_title">NEWS</p>
-      <p class="ja_title">ニュース</p>
-
-      <div class="news_contents">
-        !--一つ目--
-        <div class="news_item">
-          <img class="news_item_img" src="../html_fukushima_41/img/news_img.jpg" alt="">
-          <p class="news_item_date">
-            2016/11/18
-          </p>
-          <p class="news_item_text">
-            チーズアカデミー卒業生のコスゲさんによる<br><br>
-            チーズだけをふんだんに使用した話題のピザ屋<br><br>
-            「Kosuge Pizza」が渋谷でオープンしました！
-          </p>
-        </div>
-
-        !--二つ目--
-        <div class="news_item">
-          <img class="news_item_img" src="../html_fukushima_41/img/news_img.jpg" alt="">
-          <p class="news_item_date">
-            2016/11/18
-          </p>
-          <p class="news_item_text">
-            チーズアカデミー卒業生のコスゲさんによる<br><br>
-            チーズだけをふんだんに使用した話題のピザ屋<br><br>
-            「Kosuge Pizza」が渋谷でオープンしました！
-          </p>
-        </div>
-
-        !--三つ目--
-        <div class="news_item">
-          <img class="news_item_img" src="../html_fukushima_41/img/news_img.jpg" alt="">
-          <p class="news_item_date">
-            2016/11/18
-          </p>
-          <p class="news_item_text">
-            チーズアカデミー卒業生のコスゲさんによる<br><br>
-            チーズだけをふんだんに使用した話題のピザ屋<br><br>
-            「Kosuge Pizza」が渋谷でオープンしました！
-          </p>
-        </div>
-      </div>
-
-      <div class="news_item_more">
-        <p>More</p>
-      </div>
-    </div>
-  </div>
-  !--news_box部分部分ここまで--
-
-  !--access_box部分--
-  <div class="access_box">
-    <a name="link_access_box"></a>
-    <div class="container">
-      <p class="en_title">ACCESS</p>
-      <p class="ja_title">会社情報</p>
-
-      !--map--
-      <div class="access_box_map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3964448165275!2d139.71190211491847!3d35.667239180197484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fa9e2e881%3A0x35396adb5ba7ce03!2sG&#39;s%20ACADEMY%20TOKYO!5e0!3m2!1sja!2sjp!4v1586739121084!5m2!1sja!2sjp" 
-                width="100%" 
-                height="auto" 
-                frameborder="0" 
-                style="border:0;" 
-                allowfullscreen="" 
-                aria-hidden="false" tabindex="0">
-        </iframe>
-      </div>
-      !--map終わり--
-
-      !--table--
-      <table class="access_box_table">
-        <tr class="access_box_1st_line">
-          <td class="title">学校名</td>
-          <td class="text">チーズアカデミーTOKYO</td>
-        </tr>
-        <tr class="access_box_2nd_line">
-          <td class="title">事務所所在地</td>
-          <td class="text">〒107-0061東京都港区北青山3-5-6 青朋ビル2F</td>
-        </tr>
-        <tr class="access_box_3rd_line">
-          <td class="title">TEL</td>
-          <td class="text">03-5413-5045</td>
-        </tr>
-        <tr class="access_box_4th_line">
-          <td class="title">FAX</td>
-          <td class="text">03-5413-5046</td>
-        </tr>
-        <tr class="access_box_5th_line">
-          <td class="title">MAIL</td>
-          <td class="text">dummy@cheeseacademy.tokyo</td>
-        </tr>
-      </table>
-      !--table終わり--
-    </div>
-  </div>
-  !--access_box部分ここまで--
-
-  !--contact_box部分--
-  <div class="contact_box">
-    <a name="link_contact_box"></a>
-    <div class="container">
-      <p class="en_title">CONTACT</p>
-      <p class="ja_title">説明会お申し込み・お問い合わせ</p>
-      <p class="contact_box_p_1">
-        ぜひ1度、足を運んでみませんか。説明会は随時開催中。<br>
-        その他、お問い合わせもお気軽にどうぞ。お待ちしております。
-      </p>
-      <p class="contact_box_p_2">
-        ※チーズアカデミーは実際には存在しません。<br>
-        間違っても問い合わせしないようお願いいたします。
-      </p>
-
-      !--form--
-      <div class="contact_box_form">
-        !--(名前)の箱--
-        <div class="form_item">
-          <div class="form_title_one">
-            <p>名前</p>
-          </div>
-          <form action="" method="POST" class="form_input_one">
-            <input type="text" class="form_input_text">
-          </form>
-        </div>
-        !--(カナ)の箱--
-        <div class="form_item">
-          <div class="form_title_two">
-            <p>カナ</p>
-          </div>
-          <form action="" method="POST" class="form_input_two">
-            <input type="text" class="form_input_text">
-          </form>
-        </div>
-        !--(メールアドレス)の箱--
-        <div class="form_item">
-          <div class="form_title_two">
-            <p>メールアドレス</p>
-          </div>
-          <form action="" method="POST" class="form_input_two">
-            <input type="email" class="form_input_text">
-          </form>
-        </div>
-        !--(チーズアカデミーを知ったきっかけ)の箱--
-        <div class="form_item">
-          <div class="form_title_trigger">
-            <p>チーズアカデミーを<br>知ったきっかけ</p>
-          </div>
-          <form action="" method="POST" class="form_input_trigger">
-            <select name="trigger" class="form_input_selectbox">
-              <option value="google"></option>
-              <option value="google">google選択</option>
-              <option value="sns">SNS</option>
-              <option value="intro">紹介</option>
-              <option value="accident">たまたま通りかかった</option>
-              <option value="other">その他</option>
-            </select>
-          </form>
-        </div>
-        !--(志望動機)の箱--
-        <div class="form_item">
-          <div class="form_title_motivation">
-            <p>志望動機</p>
-          </div>
-          <form action="" method="POST" class="form_input_motivation">
-            <div class="form_input_checkbox">
-              <input type="checkbox"><p class="check_box_item">起業をしたい</p>
-            </div>
-            <div class="form_input_checkbox">
-              <input type="checkbox"><p class="check_box_item">チーズ系起業に就職・転職したい</p>
-            </div>
-            <div class="form_input_checkbox">
-              <input type="checkbox"><p class="check_box_item">チーズと関わる仕事をしており、仕事に生かしたい</p>
-            </div>
-            <div class="form_input_checkbox">
-              <input type="checkbox"><p class="check_box_item">チーズの教養を身につけたい</p>
-            </div>
-          </form>
-        </div>
-        !--(詳細)の箱--
-        <div class="form_item">
-          <div class="form_title_detail">
-            <p>詳細</p>
-          </div>
-          <form action="" method="POST" class="form_input_detail">
-            <textarea name="" id="" cols="65" rows="10"></textarea>
-          </form>
-        </div>
-        !--送信ボタン--
-        <div class="contact_item_submit">
-          <p>送信</p>
-        </div>
-      </div>
-      !--form終わり--
-    </div>
-  </div>
-  !--contact_box部分ここまで--
-
-  <!--faq_box部分-->
-  <div class="faq_box">
-    <a name="link_faq_box"></a>
-    <div class="container">
-      <div class="faq_heading">           <!--上の項目群もdivで囲った方が良かったな...-->
-        <p class="en_title">FAQ</p>
-        <p class="ja_title">よくある質問</p>
-      </div>
-
-      <div class="faq_contents">
-        <ul class="faq_list">
-          <li class="faq_item">
-            <div class="question">
-              <p>いつ頃ダウンロード可能ですか？</p>
-              <span>+</span>
-            </div>
-            <div class="answer">
-              <p>2020年中にβ版をリリースしたいと考えています。</p>
-            </div>
-          </li>
-          <li class="faq_item">
-            <div class="question">
-              <p>どうやって会うんですか？</p>
-              <span>+</span>
-            </div>
-            <div class="answer">
-              <p>
-                MIKKE上でメッセンジャーアプリと同じように、相手とコミュニケーションして決めて頂く形になります。<br>
-                ビデオ通話も可能にできるように検討中です。
-              </p>
-            </div>
-          </li>
-          <li class="faq_item">
-            <div class="question">
-              <p>料金はかかるのですか？</p>
-              <span>+</span>
-            </div>
-            <div class="answer">
-              <p>無料です。</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!--download-->
-  <div class="download_box">
-    <div class="container">
-      <p class="download-message">いますぐ無料ダウンロード</p>
-      <!--ダウンロード-->
-      <div class="down-loads">
-        <div class="download-btn">
-            <a class="apple-btn" href="#">
-                <span class="apple-icon"><i class="fab fa-apple"></i></span>
-                AppStore<br>からダウンロード
-            </a>
-        </div>
-
-        <div class="download-btn">
-            <a class="andoloid-btn" href="#">
-                <span class="andoloid-icon"><i class="fab fa-google-play"></i></span>
-                GooglePlay<br>で手に入れよう
-            </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--footer部分-->
-  <footer>
-    <div class="container">
-      <p class="footer_text">
-        copyrights 2020 MIKKE All RIghts Reserved.
-      </p>
-    </div>
-  </footer>
-  <!--footer部分ここまで-->
-
-  <!-- ここから上にコードを書く -->
-  <!-- この中に記述していく -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
-</html>
+/* footer */
+footer .container{
+    background-color: #707070;
+}
+footer .footer_text{
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     color: white;
+     font-size: 16px;
+ }
+/* footerここまで */
