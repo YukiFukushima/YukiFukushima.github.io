@@ -60,6 +60,9 @@ header .container{
 /* top_boxここまで */
 
 /* intro_box */
+.intro_box .container{
+    width: 760px;
+}
 .intro_box .en_title{
     color: #ffd61a;
     margin-top: 60px;
