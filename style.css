@@ -61,7 +61,8 @@ header .container{
 
 /* intro_box */
 .intro_box .container{
-    width: 760px;
+    width: 700px;
+    margin: 0 auto;
 }
 .intro_box .en_title{
     color: #ffd61a;
